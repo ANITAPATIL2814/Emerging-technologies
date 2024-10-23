@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+<script>
+   $(document).ready(function() {
+       $("#b1").hover(function()
+       {
+    document.write("Hello World");
+        });
+       $("p").on("click",function() //when we click on welcome... then only it shows color
+       {
+           $(this).css("background-color","pink");
+       });
+       $("#b2").click(function()
+       {
+           $("p").off("click");
+       });
+         $("#b3").click(function()
+       {
+           $("#p1").hide();
+          });  
+          $("input").select(function() {
+              $("input").after("Text Marked  ");
+          });
+           $("#b4").click(function()
+       {
+           $("input").trigger("select");
+        });
+        });
+</script>
+</head>
+<body>
+  <button id="b1">Hover Effect</button>
+  <p> Welcome </p>
+  <p> heyyy!! </p>
+  <button id="b2">Off Effect</button>
+  <p id="p1">Hello Students!!!!</p>
+  <button id="b3">On Effect</button><br><br>
+  <input type="text" value="Hello "><br><br>
+  <button id="b4">Trigger Effect</button>
+  </body>
+</html>

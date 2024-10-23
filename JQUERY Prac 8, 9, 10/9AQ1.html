@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script src="E:\Python_Java_clgNgt\JQUERY\jquery.js"></script>
+<style>
+    img{
+        position:relative;
+    }
+</style>
+<script>
+   $(document).ready(function() {
+     
+      $("#b1").click(function(){
+          $("img").animate({left:300});
+      });
+     
+   });
+</script>
+</head>
+<body>
+    <h1>Animation effect</h1>
+    <img src="E:\Python_Java_clgNgt\JQUERY\cat.jpg" height=200 width=190><br>
+    <button id="b1">Animate</button>
+</body>
+</html>

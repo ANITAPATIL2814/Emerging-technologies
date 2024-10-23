@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+<script>
+   $(document).ready(function() {
+       $("#b1").click(function(){
+          $("div").slideUp();
+      });
+      $("#b2").click(function(){
+          $("div").slideDown();
+      });
+   });
+</script>
+</head>
+<body>
+    <div>hey  !!</div>
+    <button id="b1">slide In</button>
+    <button id="b2">slide out</button>
+</body>
+</html>

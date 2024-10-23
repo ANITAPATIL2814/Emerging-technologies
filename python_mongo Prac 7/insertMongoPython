@@ -1,0 +1,17 @@
+from pymongo import MongoClient
+client=MongoClient("localhost",27017)
+db=client.mydb7
+def insert1():
+    try:
+        name1=input("Enter your Name here :")
+        age1=input("Enter your age")
+        db.MyCol.insert_one(
+            {
+                "name": name1,
+                "age": age1
+            }
+        )
+        print("inserted data successfully")
+    except Exception:
+        print(str("Error"))
+insert1()

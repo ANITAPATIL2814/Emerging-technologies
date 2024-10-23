@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>JSON programs</title>
+</head>
+ <body>
+ <script type="text/javascript">
+ var data={
+ Bname:"JSON",
+ Publisher:"microsoft",
+ author:"aaa",
+ price:500,
+ ISBN:"8766897912345",
+ };
+ document.writeln(JSON.stringify(data));
+ document.writeln(JSON.stringify(data,["Bname","author","price"]));
+ document.write(JSON.stringify(data,["Bname","author","price"],5));
+ </script>
+ </body>
+ </html>
